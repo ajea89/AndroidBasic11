@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="RedTextview" parent="Widget.AppCompat.TextView">
+        <item name="android:textColor">@color/red</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:fontFamily">@font/bernier_shade_regular</item>
+    </style>
+
+</resources>
