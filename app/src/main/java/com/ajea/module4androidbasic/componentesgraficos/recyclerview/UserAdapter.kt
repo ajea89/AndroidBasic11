@@ -7,9 +7,11 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.cardview.widget.CardView
 import androidx.constraintlayout.widget.ConstraintLayout
-import androidx.core.content.res.ResourcesCompat
+import androidx.constraintlayout.widget.Constraints.LayoutParams
+import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView
 import com.ajea.module4androidbasic.R
+import com.squareup.picasso.Picasso
 import java.util.ArrayList
 
 class UserAdapter(private val list: ArrayList<User>) : RecyclerView.Adapter<UserViewHolder>() {
@@ -33,6 +35,16 @@ class UserViewHolder(view: View) : RecyclerView.ViewHolder(view){
 
     fun render(user:User, onItemSelected : ((User) -> Unit)?){
         tvUser.text = user.email
+//        ivUser.setImageResource(R.drawable.img_placeholder)
+//        ivUser.setImageDrawable(ContextCompat.getDrawable(tvUser.context, R.drawable.img_placeholder))
+
+        if (user.imageUrl.isNotEmpty()){
+            Picasso.get().load(user.imageUrl)
+                .error(R.drawable.img_placeholder)
+                .placeholder(R.drawable.img_logo)
+                .into(ivUser)
+        }
+
         //tvUser.typeface = ResourcesCompat.getFont(tvUser.context, R.font.bernier_shade_regular)
 
         root.setOnClickListener {

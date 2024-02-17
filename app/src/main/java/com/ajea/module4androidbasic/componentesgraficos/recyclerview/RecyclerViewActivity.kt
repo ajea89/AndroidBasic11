@@ -15,16 +15,16 @@ class RecyclerViewActivity : AppCompatActivity() {
         val userList = findViewById<RecyclerView>(R.id.userList)
 
         val userDataList = arrayListOf(
-            User("Alan","1234567", "ajea89@gmail.com"),
-            User("Jose","1234567", "jose@gmail.com"),
-            User("Elias","1234567", "elias@gmail.com"),
-            User("Luis","1234567", "luis@gmail.com"),
-            User("Mariana","1234567", "mariana@gmail.com"),
-            User("Eva","1234567", "eva@gmail.com"),
-            User("Eva","1234567", "eva@gmail.com"),
-            User("Eva","1234567", "eva@gmail.com"),
-            User("Eva","1234567", "eva@gmail.com"),
-            User("Eva","1234567", "eva@gmail.com")
+            User("Alan","1234567", "ajea89@gmail.com", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRM1-2B5wjpFuyYrSCslCd0do7Do5-wcCwnOQ&usqp=CAU"),
+            User("Jose","1234567", "jose@gmail.com", ""),
+            User("Elias","1234567", "elias@gmail.com", ""),
+            User("Luis","1234567", "luis@gmail.com", ""),
+            User("Mariana","1234567", "mariana@gmail.com", ""),
+            User("Eva","1234567", "eva@gmail.com", ""),
+            User("Eva","1234567", "eva@gmail.com", ""),
+            User("Eva","1234567", "eva@gmail.com", ""),
+            User("Eva","1234567", "eva@gmail.com", ""),
+            User("Eva","1234567", "eva@gmail.com", "")
         )
 
         val adapter = UserAdapter(userDataList)

@@ -5,6 +5,7 @@ import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import android.widget.EditText
 import com.ajea.module4androidbasic.R
 
 
@@ -29,13 +30,13 @@ class IntentImplicitoActivity : AppCompatActivity() {
             //Toast.makeText(this, "Prueba toast", Toast.LENGTH_SHORT).show()
         }
 
-
-
         btSendUrl.setOnClickListener {
             val urlIntent = Intent(Intent.ACTION_VIEW, Uri.parse("http://www.facebook.com"))
             startActivity(Intent.createChooser(urlIntent,"Ver url..."))
             //Snackbar.make(btSend, "Prueba snackbar", 2000).show()
         }
+
+        btSendUrl.text = getString(R.string.label_send_url)
 
     }
 }

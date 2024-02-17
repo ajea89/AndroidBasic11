@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Primera App</string>
+    <string name="label_next">Siguiente</string>
+    <string name="label_save">Guardar</string>
+    <string name="label_send">Enviar a</string>
+    <string name="label_send_url">Enviar url</string>
+</resources>
