@@ -15,10 +15,10 @@
         android:theme="@style/Theme.Module4AndroidBasic"
         tools:targetApi="31">
         <activity
-            android:name=".binding.BackActivity"
+            android:name=".fragments.params.FinalActivity"
             android:exported="false" />
         <activity
-            android:name=".binding.BindingActivity"
+            android:name=".fragments.params.ParamsActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -27,8 +27,17 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".componentesgraficos.recyclerview.RecyclerViewActivity"
+            android:name=".fragments.FragmentActivity"
             android:exported="true"></activity>
+        <activity
+            android:name=".binding.BackActivity"
+            android:exported="false" />
+        <activity
+            android:name=".binding.BindingActivity"
+            android:exported="true" />
+        <activity
+            android:name=".componentesgraficos.recyclerview.RecyclerViewActivity"
+            android:exported="true" />
         <activity
             android:name=".componentesgraficos.ComponentsSelectionActivity"
             android:exported="true" />

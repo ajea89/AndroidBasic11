@@ -4,4 +4,6 @@
     <string name="label_save">Guardar</string>
     <string name="label_send">Enviar a</string>
     <string name="label_send_url">Enviar url</string>
+    <string name="hello_blank_fragment">Hola Fragment en blanco</string>
+    <string name="second_title_fragment">Segunda forma de agregar fragment</string>
 </resources>
