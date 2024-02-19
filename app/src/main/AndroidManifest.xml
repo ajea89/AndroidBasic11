@@ -15,11 +15,8 @@
         android:theme="@style/Theme.Module4AndroidBasic"
         tools:targetApi="31">
         <activity
-            android:name=".fragments.params.FinalActivity"
-            android:exported="false" />
-        <activity
-            android:name=".fragments.params.ParamsActivity"
-            android:exported="true">
+            android:name=".safeclick.SafeClickActivity"
+            android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -27,8 +24,15 @@
             </intent-filter>
         </activity>
         <activity
+            android:name=".fragments.params.FinalActivity"
+            android:exported="false" />
+        <activity
+            android:name=".fragments.params.ParamsActivity"
+            android:exported="true">
+        </activity>
+        <activity
             android:name=".fragments.FragmentActivity"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name=".binding.BackActivity"
             android:exported="false" />
